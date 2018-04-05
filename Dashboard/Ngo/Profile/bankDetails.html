@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>NGO DashBoard - CareMedico</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+<link rel="stylesheet" href="../../dist/css/custom.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+
+  <link rel="stylesheet" href="../../bower_components/select2/dist/css/select2.min.css">
+  
+  
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>C</b>M</span>
+     <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">CareMedico</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+               <ul class="nav navbar-nav">
+         
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#">
+              <span class="hidden-xs">Home</span>
+            </a>
+            
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+         <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Alexander Pierce</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+       
+        <li><a href="../donors.html"><i class="fa fa-check-circle"></i><span>Donors</span></a></li>
+          <li><a href="../supporterList.html">  <i class="fa fa-list"></i><span>Supporters List</span></a></li>
+       
+          <li class="treeview">
+          <a href="#">
+             <i class="fa fa-list"></i><span>Fund Raisers</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../fundRaiser/byMe.html"><i class="fa fa-circle-o"></i> By Me</a></li>
+            <li><a href="../fundRaiser/byCampaigners.html"><i class="fa fa-circle-o"></i> By Campaigners</a></li>
+          </ul>
+        </li>
+        <li class="treeview active">
+          <a href="../Profile/general.html">
+            <i class="fa fa-user"></i> <span>Profile</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="general.html"> <i class="fa fa-circle-o"></i>General</a></li>
+            <li class="active "><a href="bankDetails.html"><i class="fa fa-circle-o"></i>Bank Details
+            </a></li>
+             <li><a href="documents.html"><i class="fa fa-circle-o"></i>Documents
+            </a></li>
+             <li><a href="80gDetails.html"><i class="fa fa-circle-o"></i>80g Details
+            </a></li>
+          </ul>
+        </li>
+       <li><a href="../messages.html"><i class="fa fa-envelope"></i><span>Messages</span></a></li>
+        <li><a href="../comments.html"><i class="fa fa-comments"></i><span>Comments</span></a></li>
+        <li><a href="../updates.html"><i class="fa fa-wrench"></i><span>Updates</span></a></li>
+        <li><a href="../team.html"><i class="fa fa-users"></i><span>Team</span></a></li>
+        <li><a href="../helpCenter.html"><i class="fa fa-question-circle"></i><span>Help Center</span></a></li>
+       
+        </ul>
+    </section>
+    
+    <!-- /.sidebar -->
+  </aside>
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+     <h1>
+        Edit Profile
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Profile</a></li>
+        <li class="active">Bank Details</li>
+      </ol>
+      </section>
+      
+      <section class="content">
+          <div class="box box-primary">
+                     
+                      <h4 class="content-header">Bank Details</h4>
+                      
+                            
+                   <div class="form-group">
+                  <div class="checkbox row">
+                    <label class="col-md-2 side_space">
+                       Are you FCRA Compliant?
+                    </label>
+                    <input type="checkbox" required id="checkbox" onchange="checkit()" value="yes">
+                   </div>
+                   <h6 class="side_space">To receive donations from anywhere outside of India (foreign currency), your NGO requires the FCRA certificate</h6>
+                  </div> 
+                                        
+              <form role="form" action="#" method="post">
+                  <div class="box-body row">
+                   <h4 class="side_space">Non - FCRA Acccount Details</h4> 
+                   
+                         <div class="col-md-6">
+                      
+                  
+                   
+                   <div class="form-group">
+                  <label for="ifsc">IFSC CODE</label>
+                  <input type="text" class="form-control" id="ifsc" name="ifsc_no">
+                </div>
+                <div class="form-group">
+                  <label for="branchName">Branch Name</label>
+                  <input type="text" class="form-control" id="branchName" name=" branch_name">
+                </div>
+                   
+                 <div class="form-group">
+                  <label for="accName">Account Name</label>
+                  <input type="text" class="form-control" id="accName" name="acc_name">
+                </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                 <div class="form-group">
+                  <label for="bankName">Bank Name</label>
+                  <input type="text" class="form-control" id="bankName" name="bank_name">
+                </div>
+                 
+                 <div class="form-group">
+                  <label for="accNo">Account Number</label>
+                  <input type="text" class="form-control" id="accNo" name="acc_no">
+                </div>
+                      
+                 <div class="form-group">
+                  <label for="addInfo">Additional Info</label>
+                  <input type="text" class="form-control" id="addInfo" name="add_info">
+                  <h6>(Such as Routing No, Sort Code, etc)</h6>
+                </div>
+                 </div>
+                   <div style="display:none;" id="fcra">
+                    <h4 class="side_space">FCRA Acccount Details</h4> 
+                   
+                         <div class="col-md-6">
+                      
+                   <div class="form-group">
+                  <label for="ifsc">IFSC CODE</label>
+                  <input type="text" class="form-control" id="ifsc" name="fcra_ifsc_no">
+                </div>
+                <div class="form-group">
+                  <label for="branchName">Branch Name</label>
+                  <input type="text" class="form-control" id="branchName" name="fcra_branch_name">
+                </div>
+                   
+                 <div class="form-group">
+                  <label for="accName">Account Name</label>
+                  <input type="text" class="form-control" id="accName" name="fcra_acc_name">
+                </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                 <div class="form-group">
+                  <label for="bankName">Bank Name</label>
+                  <input type="text" class="form-control" id="bankName" name="fcra_bank_name">
+                </div>
+                 
+                 <div class="form-group">
+                  <label for="accNo">Account Number</label>
+                  <input type="text" class="form-control" id="accNo" name="fcra_acc_no">
+                </div>
+                      
+                 <div class="form-group">
+                  <label for="addInfo">Swift Code</label>
+                  <input type="text" class="form-control" id="addInfo" name="add_info">
+                  <h6>Please leave this field blank if your bank does not have a SWIFT code. 
+To know more (  <div class="tooltip2">?
+  <span class="tooltiptext2">A SWIFT code, also known as a Bank Identifier Code(BIC), is an international bank code that identifies particular banks worldwide. It's used to send/receive money to/from overseas banks. The bank branch/relationship manager will be able to provide you the SWIFT code for your bank account. Alternatively, you can also contact your banks FOREX department for the same. Please note the a SWIFT code is and 8 or 11 digit alphabetic code and differs from branch to branch for every bank. It is not the IFSC code.</span>
+</div>
+ )</h6>
+                </div>   
+                      </div>
+                      </div>
+                        
+                        
+                 <h4 class="side_space">Upload Documents</h4> 
+                   
+                 <div class="col-md-5">
+                      <h5>Document</h5> 
+                   <div class="form-group">
+                  <label for="panno">PAN CARD Number</label>
+                  <input type="text" class="form-control" id="panno" name="pan_no">
+                </div>
+                 <div class="form-group">
+                  <label>Country</label>
+                  <select class="form-control" name="address_type">
+                    <option value="passport">Passport</option>
+                    <option value="driver_license">Driver License</option>
+                    
+                    <option value="bank_statement">Bank Statement</option>
+                    
+                    <option value="voter_card">Voter ID Card</option>
+                    
+                    <option value="electricity_bill">Electricity Bill</option>
+                      
+                    <option value="phone_bill">Phone Bill MTNL/BSNL</option>
+                    
+                    <option value="shop_license">Shop License</option>
+                     </select>
+                     <h6>Choose an address proof from the dropdown above. 
+NGO name should be mentioned in the bill you submit</h6>
+                     </div>
+                     <h5>Cancelled cheque / bank statement / first page of your Non FCRA bank account passbook</h5>
+                     <h6 class="side_space">Please note that the Account name, Account number and Branch IFSC code should be clearly mentioned in the document you choose to upload.</h6>
+                  </div>
+                  
+                  <div class="col-md-5">
+                  <h5>File Name</h5>
+                 <div class="form-group">
+                  <label for="panDoc">Bank Name</label>
+                  <input type="file" class="form-control" id="panDoc" name="pan_doc">
+                </div>
+                 <br>
+                 <div class="form-group">
+                  <input type="file" class="form-control" name="add_proof">
+                </div>
+                 <br>
+                 <div class="form-group">
+                  <input type="file" class="form-control" name=" cancel_cheque">
+                </div>
+                 
+                 </div>
+                <div class="col-md-2">
+                    <h5>Status</h5>
+                     <div class="form-group">
+                  ....
+                </div>
+                </div>
+                 
+                  </div>
+                  <h6>Registered Under GST<subscript>*</subscript> </h6>
+   <div class="box-footer">
+                <button type="button" class="btn btn-primary">Save for later </button>
+              <button type="submit" class="btn btn-primary">Submit for Approval </button>
+              </div>
+              
+              </form>
+          </div>
+          
+      </section>
+    
+    </div>
+    
+    
+    
+    
+<!--    Footer-->
+    <footer class="main-footer">
+   
+    <strong>Copyright &copy; CareMedico </strong> All rights
+    reserved.
+  </footer>
+
+  
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+    
+ <script>
+    
+    $("#checkbox").click(function (){
+            if ($("#checkbox").prop("checked")){
+                $("#fcra").show();
+            }else{
+                $("#fcra").hide();
+            }              
+        });
+    </script>   
+    </body>
+</html>

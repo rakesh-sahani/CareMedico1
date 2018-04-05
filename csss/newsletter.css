@@ -1,0 +1,69 @@
+/* News lesster */
+.index section#subcribe-w{
+	padding: 0;
+}
+.subscribe-me.newsletter{
+	max-width:570px;
+}
+.subcribe-w:before{
+	content:"";
+	width:100%;
+	height:11px;
+	background:url(../images/bg-top.jpg) no-repeat;
+	position:absolute;
+	left:0;
+}
+.subcribe-w:after{
+	content:"";
+	width:100%;
+	height:120px;
+	background:url(../images/bg-bottom.jpg) no-repeat;
+	position:absolute;
+	left:0;
+}
+.subcribe-w h2{
+	padding-top:35px;
+	color:#444444;
+	font-size:28px;
+	padding-bottom:20px;
+}
+.subcribe-w h3{
+	color:#444444;
+	font-size:24px;
+	padding-bottom:30px;
+	font-weight:normal;
+        font-family: "Roboto Thin";
+}
+.sb.subcribe-w form  input.email{
+	border:1px solid #cccccc;
+	padding:8px 15px;
+	color:#cccccc;
+	font-size:14px;
+	width:69%;
+}
+.sb.subcribe-w form button.shownow{
+	clear:both;
+	border:1px solid #cccccc;
+	padding:8px 15px;
+	color:#cccccc;
+	font-size:16px;
+	width:69%;
+	background:#25bce9;
+	color:#ffffff;
+	text-transform:caption;
+	margin-top:15px;
+	margin-bottom:40px;
+}
+.subcribe-w .close{
+	position:absolute;
+	 top:-19px;
+	 right:-19px;
+	 opacity:1;
+         filter:0;
+}
+
+@media (max-width: 600px){
+	.subcribe-w{
+		width:90%;
+	}
+}

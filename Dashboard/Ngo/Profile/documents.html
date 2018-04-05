@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>NGO DashBoard - CareMedico</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+
+  <link rel="stylesheet" href="../../bower_components/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="../../bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- bootstrap datepicker -->
+  <link rel="stylesheet" href="../../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+   
+  
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  </head>
+  
+  <body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>C</b>M</span>
+     <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">CareMedico</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+               <ul class="nav navbar-nav">
+         
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#">
+              <span class="hidden-xs">Home</span>
+            </a>
+            
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+         <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Alexander Pierce</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+       
+        <li><a href="../donors.html"><i class="fa fa-check-circle"></i><span>Donors</span></a></li>
+          <li><a href="../supporterList.html">  <i class="fa fa-list"></i><span>Supporters List</span></a></li>
+       
+          <li class="treeview">
+          <a href="#">
+             <i class="fa fa-list"></i><span>Fund Raisers</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../fundRaiser/byMe.html"><i class="fa fa-circle-o"></i> By Me</a></li>
+            <li><a href="../fundRaiser/byCampaigners.html"><i class="fa fa-circle-o"></i> By Campaigners</a></li>
+          </ul>
+        </li>
+        <li class="treeview active">
+          <a href="../Profile/general.html">
+            <i class="fa fa-user"></i> <span>Profile</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li ><a href="./general.html"> <i class="fa fa-circle-o"></i>General</a></li>
+            <li><a href="./bankDetails.html"><i class="fa fa-circle-o"></i>Bank Details
+            </a></li>
+             <li class="active "><a href="./documents.html"><i class="fa fa-circle-o"></i>Documents
+            </a></li>
+             <li><a href="./80gDetails.html"><i class="fa fa-circle-o"></i>80g Details
+            </a></li>
+          </ul>
+        </li>
+       <li><a href="../messages.html"><i class="fa fa-envelope"></i><span>Messages</span></a></li>
+        <li><a href="../comments.html"><i class="fa fa-comments"></i><span>Comments</span></a></li>
+        <li><a href="../updates.html"><i class="fa fa-wrench"></i><span>Updates</span></a></li>
+        <li><a href="../team.html"><i class="fa fa-users"></i><span>Team</span></a></li>
+        <li><a href="../helpCenter.html"><i class="fa fa-question-circle"></i><span>Help Center</span></a></li>
+       
+        </ul>
+    </section>
+    
+    <!-- /.sidebar -->
+  </aside>
+  
+  
+<!--  Content-->
+<div class="content-wrapper">
+  <section class="content-header">
+     <h1>
+        Edit Profile
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Profile</a></li>
+        <li class="active">Documents</li>
+      </ol>
+      </section>
+      
+      <section class="content">
+          <div class="box box-primary">
+                            
+              <form role="form" action="#" method="post">
+                  <div class="box-body row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                <label>Date of incorporation</label>
+
+                <div class="input-group date">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" class="form-control pull-right" id="datepicker3" name="dateOfIncorp">
+                </div>
+                          </div>
+                <div class="form-group">
+                       <br>
+                       Additional Registration Documents
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="radio" id="opt1" onchange="check1()" >
+                               Memorandum of Association             
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio"  id="opt2" onchange="check2()" name="radio">
+                        Trust Deed
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio"  id="opt3" onchange="check3()" name="radio">
+                      Society Deed
+                    </label>
+                  </div>
+                </div>
+                
+                
+                <div class="form-group"  id="option1" style="display: none">
+                  
+                  <label for="memOfArticle">Memorandum of Articles</label>
+                   <input type="file"  name="memOfArticle">
+                    <h6><i>Size: Should not be more than 2 MB. Upload only in jpg, png or bmp format</i></h6>
+                </div>
+                
+            <div class="form-group"  id="option4" style="display: none"> 
+                  <label for="articleOfAss">Articles of Association</label>
+                   <input type="file" name="articleOfAss">
+                <h6><i>Size: Should not be more than 2 MB. Upload only in jpg, png or bmp format</i></h6>
+            </div>
+               
+                <div class="form-group"  id="option2" style="display: none"> 
+                  <label for="trustDeed">Trust Deed</label>
+                   <input type="file" id="trustDeed" name="trustDeed">
+                    <h6><i>Size: Should not be more than 2 MB. Upload only in jpg, png or bmp format</i></h6>
+                </div>
+                
+                <div class="form-group"  id="option3" style="display: none"> 
+                  <label for="societyDeed">Society Deed</label>
+                   <input type="file" id="societyDeed" name="societyDeed">
+                  <h6><i>Size: Should not be more than 2 MB. Upload only in jpg, png or bmp format</i></h6>
+                </div>
+              
+            </div>   
+                <div class="col-md-6">
+                    <div class="form-group"> 
+                  <label for="certi">Registration Certificate</label>
+                   <input type="file" id="certi" name="registrationCerti">
+                  <h6><i>Can only be in English, Hindi or Marathi. In case of availability in other languages, please upload the ‘Trust Deed’.
+                      Size: Should not be more than 2 MB. Upload only in jpg, png or bmp format</i></h6>
+                    </div>
+                    
+                <div class="form-group"> 
+                  <label for="80certi">Do you have 80G certificate?</label>
+                  <input type="checkbox" id="checkbox4">
+                   <input type="file" id="80certi" name="80registrationCerti" style="display: none;" >
+                    <h6><i>Size: Should not be more than 2 MB. Upload only in jpg, png or bmp format</i></h6>
+                    </div>        
+                </div>
+                  </div>  
+                  <div class="form-group">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" required>
+                     The information submitted herewith above is correct and true to my knowledge. All the documents uploaded are genuine and valid. I hereby agree to inform CareMedico in case of any changes in my organisation's status.
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" required>
+                    I hereby declare that I have read and agree to adhere to CareMedico's terms of use, FAQs, pricing and privacy policy.
+                    </label>
+                  </div>
+                </div>
+                 <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Save &amp; Preview</button>
+              </div>
+              </form>
+          </div>
+          
+      </section>
+    </div>
+    
+    
+    
+<!--    Footer-->
+    <footer class="main-footer">
+   
+    <strong>Copyright &copy; CareMedico </strong> All rights
+    reserved.
+  </footer>
+
+  
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+ <script src="../../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="../../dist/js/radio.js"></script>
+   <script>
+       
+$('#datepicker3').datepicker({
+      autoclose: true
+    });
+       
+ $("#checkbox4").click(function (){
+            if ($("#checkbox4").prop("checked")){
+                $("#80certi").show();
+            }else{
+                $("#80certi").hide();
+            }              
+        });
+
+
+    </script>   
+    
+    </body>
+</html>

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>NGO DashBoard - CareMedico</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+ <!-- Select2 -->
+  <link rel="stylesheet" href="../bower_components/select2/dist/css/select2.min.css">
+  
+ <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+<link rel="stylesheet" href="../dist/css/custom.css">
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>C</b>M</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">CareMedico</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+         
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#">
+              <span class="hidden-xs">Home</span>
+            </a>
+            
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+            <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Alexander Pierce</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+        </ul>
+            </li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+       <ul class="sidebar-menu" data-widget="tree">
+       
+          
+        <li ><a href="./fundraiser.html"><i class="fa fa-circle-o"></i><span>Fund Raisers</span></a></li>
+        <li class="active"><a href="./general.html"> <i class="fa fa-circle-o"></i><span>Profile</span></a></li>
+       <li><a href="./messages.html"><i class="fa fa-envelope"></i><span>Messages</span></a></li>
+        <li ><a href="./comments.html"><i class="fa fa-comments"></i><span>Comments</span></a></li>
+        
+        <li><a href="./donors.html"><i class="fa fa-check-circle"></i><span>Donors</span></a></li>
+      
+        </ul>
+     </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Edit Profile
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#">Dashboard</a></li>
+
+        <li class="active">Profile</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <!-- left column -->
+        
+     
+            <div class="box box-primary">
+            
+            <!-- form start -->
+            <form role="form" action="#" method="post">
+              <div class="box-body row">
+               
+               <div class="col-md-6">
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" name="fullName">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email"  name="email" disabled>
+                </div>
+                <div class="form-group">
+                  <label for="profile">Profile Image</label>
+                  <input type="file" id="profile">
+                </div>
+               
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="email" class="form-control" id="city"  name="city" >
+                </div>
+                <div class="form-group">
+                  <label>Country</label>
+                  <select class="form-control" name="country">
+                    
+	<option value="AF">Afghanistan</option>
+	<option value="AX">Åland Islands</option>
+	<option value="AL">Albania</option>
+	<option value="DZ">Algeria</option>
+	<option value="AS">American Samoa</option>
+	<option value="AD">Andorra</option>
+	<option value="AO">Angola</option>
+	<option value="AI">Anguilla</option>
+	<option value="AQ">Antarctica</option>
+	<option value="AG">Antigua and Barbuda</option>
+	<option value="AR">Argentina</option>
+	<option value="AM">Armenia</option>
+	<option value="AW">Aruba</option>
+	<option value="AU">Australia</option>
+	<option value="AT">Austria</option>
+	<option value="AZ">Azerbaijan</option>
+	<option value="BS">Bahamas</option>
+	<option value="BH">Bahrain</option>
+	<option value="BD">Bangladesh</option>
+	<option value="BB">Barbados</option>
+	<option value="BY">Belarus</option>
+	<option value="BE">Belgium</option>
+	<option value="BZ">Belize</option>
+	<option value="BJ">Benin</option>
+	<option value="BM">Bermuda</option>
+	<option value="BT">Bhutan</option>
+	<option value="BO">Bolivia, Plurinational State of</option>
+	<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+	<option value="BA">Bosnia and Herzegovina</option>
+	<option value="BW">Botswana</option>
+	<option value="BV">Bouvet Island</option>
+	<option value="BR">Brazil</option>
+	<option value="IO">British Indian Ocean Territory</option>
+	<option value="BN">Brunei Darussalam</option>
+	<option value="BG">Bulgaria</option>
+	<option value="BF">Burkina Faso</option>
+	<option value="BI">Burundi</option>
+	<option value="KH">Cambodia</option>
+	<option value="CM">Cameroon</option>
+	<option value="CA">Canada</option>
+	<option value="CV">Cape Verde</option>
+	<option value="KY">Cayman Islands</option>
+	<option value="CF">Central African Republic</option>
+	<option value="TD">Chad</option>
+	<option value="CL">Chile</option>
+	<option value="CN">China</option>
+	<option value="CX">Christmas Island</option>
+	<option value="CC">Cocos (Keeling) Islands</option>
+	<option value="CO">Colombia</option>
+	<option value="KM">Comoros</option>
+	<option value="CG">Congo</option>
+	<option value="CD">Congo, the Democratic Republic of the</option>
+	<option value="CK">Cook Islands</option>
+	<option value="CR">Costa Rica</option>
+	<option value="CI">Côte d'Ivoire</option>
+	<option value="HR">Croatia</option>
+	<option value="CU">Cuba</option>
+	<option value="CW">Curaçao</option>
+	<option value="CY">Cyprus</option>
+	<option value="CZ">Czech Republic</option>
+	<option value="DK">Denmark</option>
+	<option value="DJ">Djibouti</option>
+	<option value="DM">Dominica</option>
+	<option value="DO">Dominican Republic</option>
+	<option value="EC">Ecuador</option>
+	<option value="EG">Egypt</option>
+	<option value="SV">El Salvador</option>
+	<option value="GQ">Equatorial Guinea</option>
+	<option value="ER">Eritrea</option>
+	<option value="EE">Estonia</option>
+	<option value="ET">Ethiopia</option>
+	<option value="FK">Falkland Islands (Malvinas)</option>
+	<option value="FO">Faroe Islands</option>
+	<option value="FJ">Fiji</option>
+	<option value="FI">Finland</option>
+	<option value="FR">France</option>
+	<option value="GF">French Guiana</option>
+	<option value="PF">French Polynesia</option>
+	<option value="TF">French Southern Territories</option>
+	<option value="GA">Gabon</option>
+	<option value="GM">Gambia</option>
+	<option value="GE">Georgia</option>
+	<option value="DE">Germany</option>
+	<option value="GH">Ghana</option>
+	<option value="GI">Gibraltar</option>
+	<option value="GR">Greece</option>
+	<option value="GL">Greenland</option>
+	<option value="GD">Grenada</option>
+	<option value="GP">Guadeloupe</option>
+	<option value="GU">Guam</option>
+	<option value="GT">Guatemala</option>
+	<option value="GG">Guernsey</option>
+	<option value="GN">Guinea</option>
+	<option value="GW">Guinea-Bissau</option>
+	<option value="GY">Guyana</option>
+	<option value="HT">Haiti</option>
+	<option value="HM">Heard Island and McDonald Islands</option>
+	<option value="VA">Holy See (Vatican City State)</option>
+	<option value="HN">Honduras</option>
+	<option value="HK">Hong Kong</option>
+	<option value="HU">Hungary</option>
+	<option value="IS">Iceland</option>
+	<option value="IN">India</option>
+	<option value="ID">Indonesia</option>
+	<option value="IR">Iran, Islamic Republic of</option>
+	<option value="IQ">Iraq</option>
+	<option value="IE">Ireland</option>
+	<option value="IM">Isle of Man</option>
+	<option value="IL">Israel</option>
+	<option value="IT">Italy</option>
+	<option value="JM">Jamaica</option>
+	<option value="JP">Japan</option>
+	<option value="JE">Jersey</option>
+	<option value="JO">Jordan</option>
+	<option value="KZ">Kazakhstan</option>
+	<option value="KE">Kenya</option>
+	<option value="KI">Kiribati</option>
+	<option value="KP">Korea, Democratic People's Republic of</option>
+	<option value="KR">Korea, Republic of</option>
+	<option value="KW">Kuwait</option>
+	<option value="KG">Kyrgyzstan</option>
+	<option value="LA">Lao People's Democratic Republic</option>
+	<option value="LV">Latvia</option>
+	<option value="LB">Lebanon</option>
+	<option value="LS">Lesotho</option>
+	<option value="LR">Liberia</option>
+	<option value="LY">Libya</option>
+	<option value="LI">Liechtenstein</option>
+	<option value="LT">Lithuania</option>
+	<option value="LU">Luxembourg</option>
+	<option value="MO">Macao</option>
+	<option value="MK">Macedonia, the former Yugoslav Republic of</option>
+	<option value="MG">Madagascar</option>
+	<option value="MW">Malawi</option>
+	<option value="MY">Malaysia</option>
+	<option value="MV">Maldives</option>
+	<option value="ML">Mali</option>
+	<option value="MT">Malta</option>
+	<option value="MH">Marshall Islands</option>
+	<option value="MQ">Martinique</option>
+	<option value="MR">Mauritania</option>
+	<option value="MU">Mauritius</option>
+	<option value="YT">Mayotte</option>
+	<option value="MX">Mexico</option>
+	<option value="FM">Micronesia, Federated States of</option>
+	<option value="MD">Moldova, Republic of</option>
+	<option value="MC">Monaco</option>
+	<option value="MN">Mongolia</option>
+	<option value="ME">Montenegro</option>
+	<option value="MS">Montserrat</option>
+	<option value="MA">Morocco</option>
+	<option value="MZ">Mozambique</option>
+	<option value="MM">Myanmar</option>
+	<option value="NA">Namibia</option>
+	<option value="NR">Nauru</option>
+	<option value="NP">Nepal</option>
+	<option value="NL">Netherlands</option>
+	<option value="NC">New Caledonia</option>
+	<option value="NZ">New Zealand</option>
+	<option value="NI">Nicaragua</option>
+	<option value="NE">Niger</option>
+	<option value="NG">Nigeria</option>
+	<option value="NU">Niue</option>
+	<option value="NF">Norfolk Island</option>
+	<option value="MP">Northern Mariana Islands</option>
+	<option value="NO">Norway</option>
+	<option value="OM">Oman</option>
+	<option value="PK">Pakistan</option>
+	<option value="PW">Palau</option>
+	<option value="PS">Palestinian Territory, Occupied</option>
+	<option value="PA">Panama</option>
+	<option value="PG">Papua New Guinea</option>
+	<option value="PY">Paraguay</option>
+	<option value="PE">Peru</option>
+	<option value="PH">Philippines</option>
+	<option value="PN">Pitcairn</option>
+	<option value="PL">Poland</option>
+	<option value="PT">Portugal</option>
+	<option value="PR">Puerto Rico</option>
+	<option value="QA">Qatar</option>
+	<option value="RE">Réunion</option>
+	<option value="RO">Romania</option>
+	<option value="RU">Russian Federation</option>
+	<option value="RW">Rwanda</option>
+	<option value="BL">Saint Barthélemy</option>
+	<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+	<option value="KN">Saint Kitts and Nevis</option>
+	<option value="LC">Saint Lucia</option>
+	<option value="MF">Saint Martin (French part)</option>
+	<option value="PM">Saint Pierre and Miquelon</option>
+	<option value="VC">Saint Vincent and the Grenadines</option>
+	<option value="WS">Samoa</option>
+	<option value="SM">San Marino</option>
+	<option value="ST">Sao Tome and Principe</option>
+	<option value="SA">Saudi Arabia</option>
+	<option value="SN">Senegal</option>
+	<option value="RS">Serbia</option>
+	<option value="SC">Seychelles</option>
+	<option value="SL">Sierra Leone</option>
+	<option value="SG">Singapore</option>
+	<option value="SX">Sint Maarten (Dutch part)</option>
+	<option value="SK">Slovakia</option>
+	<option value="SI">Slovenia</option>
+	<option value="SB">Solomon Islands</option>
+	<option value="SO">Somalia</option>
+	<option value="ZA">South Africa</option>
+	<option value="GS">South Georgia and the South Sandwich Islands</option>
+	<option value="SS">South Sudan</option>
+	<option value="ES">Spain</option>
+	<option value="LK">Sri Lanka</option>
+	<option value="SD">Sudan</option>
+	<option value="SR">Suriname</option>
+	<option value="SJ">Svalbard and Jan Mayen</option>
+	<option value="SZ">Swaziland</option>
+	<option value="SE">Sweden</option>
+	<option value="CH">Switzerland</option>
+	<option value="SY">Syrian Arab Republic</option>
+	<option value="TW">Taiwan, Province of China</option>
+	<option value="TJ">Tajikistan</option>
+	<option value="TZ">Tanzania, United Republic of</option>
+	<option value="TH">Thailand</option>
+	<option value="TL">Timor-Leste</option>
+	<option value="TG">Togo</option>
+	<option value="TK">Tokelau</option>
+	<option value="TO">Tonga</option>
+	<option value="TT">Trinidad and Tobago</option>
+	<option value="TN">Tunisia</option>
+	<option value="TR">Turkey</option>
+	<option value="TM">Turkmenistan</option>
+	<option value="TC">Turks and Caicos Islands</option>
+	<option value="TV">Tuvalu</option>
+	<option value="UG">Uganda</option>
+	<option value="UA">Ukraine</option>
+	<option value="AE">United Arab Emirates</option>
+	<option value="GB">United Kingdom</option>
+	<option value="US">United States</option>
+	<option value="UM">United States Minor Outlying Islands</option>
+	<option value="UY">Uruguay</option>
+	<option value="UZ">Uzbekistan</option>
+	<option value="VU">Vanuatu</option>
+	<option value="VE">Venezuela, Bolivarian Republic of</option>
+	<option value="VN">Viet Nam</option>
+	<option value="VG">Virgin Islands, British</option>
+	<option value="VI">Virgin Islands, U.S.</option>
+	<option value="WF">Wallis and Futuna</option>
+	<option value="EH">Western Sahara</option>
+	<option value="YE">Yemen</option>
+	<option value="ZM">Zambia</option>
+	<option value="ZW">Zimbabwe</option>
+
+                  </select>
+                   </div>
+                  <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="number" class="form-control" id="phone" name="phone">
+                                    
+                </div>
+                <div class="form-group">
+                    <h4>Social Share Buttons</h4>
+                    <h6>Check which social networks you want to use for sharing your posts</h6>
+                
+                     <div class="checkbox row">
+                     <div class="col-md-3">
+                    <label>
+                      <input type="checkbox" id="checkbox1">Facebook
+                    </label>
+                    </div>
+                    <div class="col-md-9">
+                    <input type="text" id="facebook" name="fb" class="form-control">
+                    </div>
+                  </div>
+                     <div class="checkbox row">
+                     <div class="col-md-3">
+                    <label>
+                      <input type="checkbox" id="checkbox2">Twitter
+                    </label>
+                    </div>
+                    <div class="col-md-9">
+                    <input type="text" id="twitter" name="tw" class="form-control">
+                    </div>
+                  </div>
+                     <div class="checkbox row">
+                     <div class="col-md-3">
+                    <label>
+                      <input type="checkbox" id="checkbox3">Google+
+                    </label>
+                    </div>
+                    <div class="col-md-9">
+                    <input type="text" id="google" name="gg" class="form-control">
+                    </div>
+                  </div>
+                     <div class="checkbox row">
+                     <div class="col-md-3">
+                    <label>
+                      <input type="checkbox"  id="checkbox4">Linkedin
+                    </label>
+                    </div>
+                    <div class="col-md-9">
+                    <input type="text" id="linkedin" name="ln" class="form-control">
+                    </div>
+                  </div>
+                   
+                    
+                </div>
+                
+              </div>
+              <div class="col-md-6">
+              
+              <div class="form-group">
+                <label>Custom Url</label>
+
+                <div class="input-group">
+                  
+                  <input type="text" class="form-control" data-inputmask='"mask": ".caremedico.org"' data-mask name="url">
+                  <div class="input-group-addon">
+                  .caremedico.org
+                  </div>
+                </div>
+                <!-- /.input group -->
+              </div>
+                 
+                   <div class="form-group">
+                  <label for="address">Address</label>
+                  
+                  <textarea class="form-control" name="address" id="address" cols="30" rows="4" ></textarea>
+                        </div>
+                         <div class="form-group">
+                  <label for="website">Website</label>
+                  <input type="text" class="form-control" id="website"  name="website" >
+                  </div>
+                  <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">
+                About Me
+              </h3>
+        </div>
+            <!-- /.box-header -->
+            <div class="box-body pad">
+              <form>
+                <textarea class="textarea" placeholder="Place some text here"
+                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+              </form>
+            </div>
+          </div>
+                 
+                  </div>
+                <hr>
+                <div class="col-md-6">
+                    <div class="form-group">
+                  <label for="password1">New Password</label>
+                  <input type="pwd" class="form-control" id="password1" name="pwd">
+                </div>
+                <div class="form-group">
+                  <label for="password2">Current Password</label>
+                  <input type="email" class="form-control" id="password2"  name="password">
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                  <label for="password2">Confirm Password</label>
+                  <input type="password" class="form-control" id="password2" name="password">
+                </div>
+                </div>
+                
+                
+                 <div class="form-group side_space ">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" required>
+                     The information submitted herewith above is correct and true to my knowledge. All the documents uploaded are genuine and valid. I hereby agree to inform CareMedico in case of any changes in my organisation's status.
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" required>
+                    I hereby declare that I have read and agree to adhere to CareMedico's terms of use, FAQs, pricing and privacy policy.
+                    </label>
+                  </div>
+                </div>
+              <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Save</button>
+              </div>
+                </div>
+              
+            </form>
+            
+<!--  Form End-->
+          </div>
+     
+     
+     
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+  
+    <strong>Copyright &copy; CareMedico </strong> All rights
+    reserved.
+  </footer>
+
+ 
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<!--Input MAsk-->
+<script src="../plugins/input-mask/jquery.inputmask.js"></script>
+<!-- Select2 -->
+<script src="../bower_components/select2/dist/js/select2.full.min.js"></script>
+
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+
+
+
+<script>
+    $(function(){
+     $('.select2').select2()
+ $('[data-mask]').inputmask()
+     $('.textarea').wysihtml5()   
+         $("#facebook").attr("disabled","disabled")
+    $("#twitter").attr("disabled","disabled")
+         $("#google").attr("disabled","disabled")
+     $("#linkedin").attr("disabled","disabled")
+    })
+   
+   
+    $('#checkbox1').click(function()
+{
+    if ($(this).is(':checked'))
+    {
+        $("#facebook").removeAttr("disabled"); 
+    }
+    //If checkbox is unchecked then disable or enable input
+    else
+    {
+        $("#facebook").attr("disabled","disabled");
+    }
+    
+});
+     $('#checkbox2').click(function()
+{
+    if ($(this).is(':checked'))
+    {
+        $("#twitter").removeAttr("disabled"); 
+    }
+    //If checkbox is unchecked then disable or enable input
+    else
+    {
+        $("#twitter").attr("disabled","disabled");
+    }
+    
+});
+     $('#checkbox3').click(function()
+{
+    if ($(this).is(':checked'))
+    {
+        $("#google").removeAttr("disabled"); 
+    }
+    //If checkbox is unchecked then disable or enable input
+    else
+    {
+        $("#google").attr("disabled","disabled");
+    }
+    
+});
+     $('#checkbox4').click(function()
+{
+    if ($(this).is(':checked'))
+    {
+        $("#linkedin").removeAttr("disabled"); 
+    }
+    //If checkbox is unchecked then disable or enable input
+    else
+    {
+        $("#linkedin").attr("disabled","disabled");
+    }
+    
+});
+    
+    
+    </script>
+</body>
+</html>

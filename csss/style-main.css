@@ -1,0 +1,19 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Printshop
+Version:	1.1
+Last change:	28/11/2015 [fixed Float bug, vf]
+Assigned to:	Netbase
+Primary use:	admin 
+-------------------------------------------------------------------*/  
+@import "bootstrap.min.css";
+@import "font-awesome.min.css";
+@import "owl.carousel.css"; 
+@import "settings.css"; 
+@import "jquery.jscrollpane.css";  
+@import "subscribe-better.css";
+@import "owl.transitions.css"; 
+@import "theme-default.css";
+@import "newsletter.css";
+@import "responsive.css";
